@@ -5,7 +5,7 @@ A daemon to listen on TCP/IP for CDR records from a PBX and publish them to a Sh
 ## Installation Overview
 
  1. Configure 3CX to send CDR records via TCP/IP
- 1. Install dotnet SDK 7.0 and runtime 6.0 - this is slightly messy because as part of the installation process we use a tool that requires and SDK and dotnet 6.0 runtime to install a certificate
+ 1. Install dotnet SDK 7.0 and runtime 6.0 - this is slightly messy because as part of the installation process we use a tool that requires an SDK and dotnet 6.0 runtime to install a certificate
  1. Put the binaries somewhere on your server. I used /usr/local/cdr-relay/bin - but I'm not a Linux guy so that might not be the best place.
  1. Create a List in SharePoint with the required column anmes and types
  1. Create an "Application" in Azure AD with access to your SharePoint and add a self-signed certificate for App Authentication
