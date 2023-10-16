@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ACSSolutions.CDRRelay": {
+      "commandName": "Project",
+      "commandLineArgs": "--environment \"Development\""
+    }
+  }
+}
