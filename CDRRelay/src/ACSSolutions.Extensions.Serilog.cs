@@ -12,6 +12,8 @@ using Serilog.Core;
 using Serilog.Events;
 using Serilog.Sinks.ApplicationInsights;
 
+#nullable disable
+
 namespace ACSSolutions.Extensions.Serilog
 {
 
