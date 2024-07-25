@@ -9,7 +9,7 @@ Tested with 3CX v18 and v20 running on a 3CX Linux server running in AWS EC2.
  
 
 1. Create a List in SharePoint with the required column names and types.
-	![Screenshot of list columns in SharePoint Online](assets/SharePoint%20List%20Configuration.png)
+	![Screenshot of list columns in SharePoint Online](Assets/SharePoint%20List%20Configuration.png)
 1. On your server, install the dotnet SDK (which includes the runtime) - see https://learn.microsoft.com/en-gb/dotnet/core/install/linux-debian#install-the-sdk
 1. Create a self-signed certificate in the dotnet certificate store. There are many ways; this way is mine.
 	You already have the Microsoft package sources configured and the dotnet framework installed, so lets use it.
@@ -61,11 +61,11 @@ Tested with 3CX v18 and v20 running on a 3CX Linux server running in AWS EC2.
 	1. I don't think a Redirect URI is required.
 	1. Click Register
 	1. Go to the Manage, Certificates and Secrets section and select Certificates
-	![Screenshot of the Azure Portal, ready to upload the certificate file](assets/Microsoft%20Entra%20ID%20-%20Uploading%20the%20Certificate.png)
+	![Screenshot of the Azure Portal, ready to upload the certificate file](Assets/Microsoft%20Entra%20ID%20-%20Uploading%20the%20Certificate.png)
 	1. Click the upload button and upload the pnp.cer file with a suitable description.
 1. Grant the new App Registration full access to your SharePoint. This is over-permissioning but I don't know how to restrict it to specific sites or lists.
 	1. Go to the Manage, API Permissions section and create & grant the permissions in the screenshot below:
-	![Screenshot showing API Permissions completed](assets/App%20Registration%20API%20Permissions.png)
+	![Screenshot showing API Permissions completed](Assets/App%20Registration%20API%20Permissions.png)
 1. Get the CDR Relay app binaries. Either of the these will work:
 	1. Snag the binaries from the [releases on GitHub](https://github.com/ACS-Solutions/CDR-Relay/releases), or
 	1. git clone the code from https://github.com/ACS-Solutions/CDR-Relay.git, and publish it in Visual Studio 2022 using the provided profile to a local folder
@@ -89,7 +89,7 @@ Tested with 3CX v18 and v20 running on a 3CX Linux server running in AWS EC2.
 	}
 	```
 1. Configure 3CX to send CDR records via TCP/IP
-![Screenshot of 3CX v20 CDR configuration screen](assets/3CX%20CDR%20Setup.png)
+![Screenshot of 3CX v20 CDR configuration screen](Assets/3CX%20CDR%20Setup.png)
 1. Test Run from the console
 	```
 	admin@etc:/usr/local/cdr-relay/bin$ /usr/bin/dotnet ACSSolutions.CDRRelay.dll

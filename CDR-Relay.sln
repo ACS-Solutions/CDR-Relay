@@ -11,6 +11,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{3C6FDD00
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{513BD751-716F-4F30-8077-608DA0136D09}"
+	ProjectSection(SolutionItems) = preProject
+		Assets\3CX CDR Setup.png = Assets\3CX CDR Setup.png
+		Assets\App Registration API Permissions.png = Assets\App Registration API Permissions.png
+		Assets\Microsoft Entra ID - Uploading the Certificate.png = Assets\Microsoft Entra ID - Uploading the Certificate.png
+		Assets\SharePoint List Configuration.png = Assets\SharePoint List Configuration.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +32,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{513BD751-716F-4F30-8077-608DA0136D09} = {3C6FDD00-54FD-4B59-9818-A2D61E6296E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ABF392B3-7060-4D97-A3DF-22EBF44A0F84}
